@@ -1,0 +1,21 @@
+camunda:
+  bpm:
+    default-serialization-format: application/json
+    authorization:
+      enabled: true
+    history-level: full
+    id-generator: simple
+    database:
+      schema-update: drop-create
+      type: h2
+    admin-user:
+      id: admin
+
+spring.h2.console.enabled: true
+
+spring:
+  jpa:
+    generate-ddl: false
+    hibernate.ddl-auto: validate
+
+
